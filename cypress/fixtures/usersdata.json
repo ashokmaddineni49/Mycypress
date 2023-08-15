@@ -1,0 +1,114 @@
+[
+	{
+		"liscence_id" : "",
+		"firstname" : "Enosh Kanth",
+		"lastname" : "Loda",
+		"email" : "enoshkanth@gmail.com",
+		"pass_word" : "12345"
+	},
+	{
+		"liscence_id" : "DL011123",
+		"firstname" : "Mahitha",
+		"lastname" : "H",
+		"email" : "mahithah@gmail.com",
+		"pass_word" : "Test@123"
+	},
+	{
+		"liscence_id" : "DL0123",
+		"firstname" : "Enosh",
+		"lastname" : "Kanth",
+		"email" : "lenoshkanth@gmail.com",
+		"pass_word" : "12345"
+	},
+	{
+		"liscence_id" : "DL012345566",
+		"firstname" : "pranathi",
+		"lastname" : "p",
+		"email" : "p@gmail.com",
+		"pass_word" : "ashok"
+	},
+	{
+		"liscence_id" : "DL54321",
+		"firstname" : "Ashok",
+		"lastname" : "Maddineni",
+		"email" : "ashok@gmail.com",
+		"pass_word" : "ashok"
+	},
+	{
+		"liscence_id" : "DL98765",
+		"firstname" : "elsa",
+		"lastname" : "p",
+		"email" : "elsap@gmail.com",
+		"pass_word" : "elsa123"
+	},
+	{
+		"liscence_id" : "DLR456",
+		"firstname" : "AK",
+		"lastname" : "Maddi",
+		"email" : "ashokkumar@gmail.com",
+		"pass_word" : "Test@A1"
+	},
+	{
+		"liscence_id" : "DLR4567",
+		"firstname" : "AK",
+		"lastname" : "Maddi",
+		"email" : "ashokkumar@gmail.com",
+		"pass_word" : "Test@A1"
+	},
+	{
+		"liscence_id" : "DLR45678",
+		"firstname" : "AK",
+		"lastname" : "Maddi",
+		"email" : "ashokkumar@gmail.com",
+		"pass_word" : "Test@A1"
+	},
+	{
+		"liscence_id" : "DLR45698",
+		"firstname" : "AK",
+		"lastname" : "Maddi",
+		"email" : "ashokkumar@gmail.com",
+		"pass_word" : "Test@A1"
+	},
+	{
+		"liscence_id" : "DLRA12",
+		"firstname" : "AK",
+		"lastname" : "Maddi",
+		"email" : "ashokkumar@gmail.com",
+		"pass_word" : "Test@A1"
+	},
+	{
+		"liscence_id" : "DLRA123",
+		"firstname" : "AK",
+		"lastname" : "Maddi",
+		"email" : "ashokkumar@gmail.com",
+		"pass_word" : "Test@A1"
+	},
+	{
+		"liscence_id" : "DLRA12345",
+		"firstname" : "Ashok",
+		"lastname" : "Maddi",
+		"email" : "ashokkumar@gmail.com",
+		"pass_word" : "Test@A1"
+	},
+	{
+		"liscence_id" : "DS123",
+		"firstname" : "gayatri",
+		"lastname" : "m",
+		"email" : "gayim@gmail.com",
+		"pass_word" : "ashok"
+	},
+	{
+		"liscence_id" : "DX08965",
+		"firstname" : "thulasi",
+		"lastname" : "Kopaka",
+		"email" : "tulasi@gmail.com",
+		"pass_word" : "123456"
+	},
+	{
+		"liscence_id" : "DX123456",
+		"firstname" : "Gowtham",
+		"lastname" : "Maddineni",
+		"email" : "gm@gmail.com",
+		"pass_word" : "gowtham"
+	}
+]

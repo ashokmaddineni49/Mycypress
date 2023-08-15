@@ -1,0 +1,66 @@
+{
+
+  "name": "mycypress",
+
+  "version": "1.0.0",
+
+  "main": "cypress.config.js",
+
+  "scripts": {
+
+    "test:home": "cypress run --spec \"cypress/e2e/features/UI/Home/*.feature\"",
+
+    "test:login": "cypress run --spec \"cypress/e2e/features/UI/Login/*.feature\"",
+
+    "test:smoke": "cypress run --spec \"cypress/e2e/features/UI/mytestcases/*.cy.js\""
+
+  },
+
+  "keywords": [],
+
+  "author": "",
+
+  "license": "ISC",
+
+  "description": "",
+
+  "devDependencies": {
+
+    "chai": "^4.3.7",
+
+    "cypress": "^12.17.3",
+
+    "mocha": "^10.2.0",
+
+    "mysql2": "^3.6.0"
+
+  },
+
+  "dependencies": {
+
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.4",
+
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+
+    "cypress-cucumber-preprocessor": "^4.3.1",
+
+    "cypress-mochawesome-reporter": "^3.5.1",
+
+    "mysql": "github:mysqljs/mysql",
+
+    "neat-csv": "^5.2.0",
+
+    "save-dev": "^0.0.1-security"
+
+  },
+
+  "cypress-cucumber-preprocessor": {
+
+    "step_definitions": "cypress/support/step_definitions/",
+
+    "nonGlobalStepDefinitions": false
+
+  }
+
+}
+
