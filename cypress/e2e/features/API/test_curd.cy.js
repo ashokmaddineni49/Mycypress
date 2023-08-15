@@ -55,7 +55,7 @@ describe('Update user details', () => {
                 method: 'PUT',
                 url: `https://gorest.co.in/public/v2/users/${userId}`,
                 headers: {
-                    'authorization': 'Misterios Person ' + Cypress.env('ACCESS_TOKEN'), // Generate access token from https://gorest.co.in/consumer/login and add the same to cypress.env.json
+                    'authorization': 'Bearer ' + Cypress.env('ACCESS_TOKEN'), // Generate access token from https://gorest.co.in/consumer/login and add the same to cypress.env.json
                 },
                 body: {
                     "name": "Updated Name",
