@@ -13,6 +13,15 @@ module.exports = defineConfig({
           plugins: [createEsbuildPlugin.default(config)],
         })
       );
+
+      on('task', {
+        log(message) {
+            console.log(message + '\n');
+            return null;
+            // Then to see the log messages in the terminal
+            // Use: cy.task("log", "my message");
+        },
+      })
       preprocessor.addCucumberPreprocessorPlugin(on, config);
       require('cypress-mochawesome-reporter/plugin')(on);
       // Make sure to return the config object as it might have been modified by the plugin.
