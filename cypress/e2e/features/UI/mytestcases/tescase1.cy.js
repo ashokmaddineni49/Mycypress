@@ -1,9 +1,13 @@
-import { login } from './logincsv.cy.js';
-
 describe('Registration <home>', () => {
-  it('Login Calling', () => {
-    login();
-  });
+it('Hi Hello',()=>{
+
+const token = Cypress.env.ACCESS_TOKEN;
+cy.log(token);
+})  
+});
+
+
+
 
   /*it('Welcome Message', () => {
     cy.get('.row.title').invoke('text').then((text) => {
@@ -36,4 +40,3 @@ describe('Registration <home>', () => {
       });
 
   })*/
-});

@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+const baseUrl = "https://ultimateqa.com/"
+Cypress.Commands.add('PageElements', () => {
+    cy.visit(baseUrl); // Navigate to the login page
+    cy.get('h1').first().should('be.visible').then(($txt)=>{
+        const orgtext =$txt.text()
+        const text="Master test Automation, Faster."
+        expect(orgtext).to.be.equal(text)
+        cy.log('From the Tool',orgtext)
+
+    })
+});
+
