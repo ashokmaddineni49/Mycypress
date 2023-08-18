@@ -1,4 +1,4 @@
-const faker = require("@faker-js/faker");
+const {faker} = require("@faker-js/faker");
 
 let url = 'localhost:8080/register';
 
