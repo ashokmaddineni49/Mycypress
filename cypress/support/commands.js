@@ -24,15 +24,28 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-const baseUrl = "https://ultimateqa.com/"
+
 Cypress.Commands.add('PageElements', () => {
-    cy.visit(baseUrl); // Navigate to the login page
-    cy.get('h1').first().should('be.visible').then(($txt)=>{
+
+    cy.log("Command Getting here ")
+    cy.visit('https://www.saucedemo.com/'); // Navigate to the login page
+    cy.get('[data-test="username"]').type('standard_user')
+    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.contains('Login').click()
+    /*cy.get('h1').first().should('be.visible').then(($txt)=>{
         const orgtext =$txt.text()
         const text="Master test Automation, Faster."
         expect(orgtext).to.be.equal(text)
         cy.log('From the Tool',orgtext)
 
-    })
+    })*/
 });
+
+Cypress.Commands.add('Launching_Automation_Site', () => {
+    
+    cy.visit('https://www.automationexercise.com/'); // Navigate to the login page
+
+});
+
+
 
