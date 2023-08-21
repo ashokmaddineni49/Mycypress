@@ -38,6 +38,7 @@ module.exports = defineConfig({
       return config
 
     },
+    //chromeWebSecurity:false,
     testIsolation: false,
     specPattern: ['cypress/e2e/features/**/*.feature', 'cypress/e2e/**/*.cy.js'],
     excludeSpecPattern: '**/pages/*',
@@ -47,7 +48,7 @@ module.exports = defineConfig({
     env: {
       grepFilterSpecs: true,
       grepOmitFiltered: true,
-      //grepIntegrationFolder: '../../',
+      grepIntegrationFolder: '../../',
 
     },
 
