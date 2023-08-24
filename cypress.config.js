@@ -39,12 +39,14 @@ module.exports = defineConfig({
 
     },
     //chromeWebSecurity:false,
+    
     testIsolation: false,
     specPattern: ['cypress/e2e/features/**/*.feature', 'cypress/e2e/**/*.cy.js'],
     excludeSpecPattern: '**/pages/*',
     videosFolder: "cypress/reports/videos",
     screenshotsFolder: "cypress/reports/screenshots",
     reporter: 'cypress-mochawesome-reporter',
+    execTimeout: 10000,
     env: {
       grepFilterSpecs: true,
       grepOmitFiltered: true,

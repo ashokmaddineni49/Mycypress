@@ -4,6 +4,7 @@ const url = 'http://localhost:3000/';
 let table;
 
 describe('MultiLogins', () => {
+    
     before(() => {
         // Load data from the CSV file and store it in the 'table' variable
         cy.fixture('usersdata.csv')
