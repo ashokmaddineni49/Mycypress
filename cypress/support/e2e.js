@@ -18,7 +18,7 @@ import './commands';
 import 'cypress-mochawesome-reporter/register';
 import '@cypress/grep';
 import '@cypress-audit/lighthouse/commands';
-
+//import 'cypress-parallel'
 import '@faker-js/faker';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

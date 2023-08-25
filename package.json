@@ -13,8 +13,7 @@
     "test:login": "cypress run --spec \"cypress/e2e/features/UI/Login/*.feature\"",
 
     "test:smoke": "cypress run --spec \"cypress/e2e/features/UI/mytestcases/*.cy.js\"",
-
-    "cypress:run": "npx cypress-parallel run -s \"cypress/e2e/features/UI/mytestcases/\" --spec \"**/*.cy.js\" -t 3"
+    "test:default":"cypress run --spec \"cypress/e2e/2-advanced-examples/*.cy.js\""
 
   },
 

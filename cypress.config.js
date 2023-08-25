@@ -38,7 +38,8 @@ module.exports = defineConfig({
       return config
 
     },
-    //chromeWebSecurity:false,
+    chromeWebSecurity:false,
+    
     
     testIsolation: false,
     specPattern: ['cypress/e2e/features/**/*.feature', 'cypress/e2e/**/*.cy.js'],
@@ -46,6 +47,7 @@ module.exports = defineConfig({
     videosFolder: "cypress/reports/videos",
     screenshotsFolder: "cypress/reports/screenshots",
     reporter: 'cypress-mochawesome-reporter',
+
     execTimeout: 10000,
     env: {
       grepFilterSpecs: true,
@@ -61,7 +63,7 @@ module.exports = defineConfig({
       inlineAssets: true,
       saveAllAttempts: true,
     },
-    projectId: "qrq1nw"
+    projectId: "MyProjects"
   },
 });
 

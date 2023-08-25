@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-25T07:49:05.225Z",
+    "end": "2023-08-25T07:49:11.512Z",
+    "duration": 6287,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7c9e4eed-3038-4afa-8c0f-84d5e36dd51c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\2-advanced-examples\\aliasing.cy.js",
+      "file": "cypress\\e2e\\2-advanced-examples\\aliasing.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5d7aa099-b098-4bb1-91f1-a9b8b18c0842",
+          "title": "Aliasing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": ".as() - alias a DOM element for later use",
+              "fullTitle": "Aliasing .as() - alias a DOM element for later use",
+              "timedOut": null,
+              "duration": 705,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\2-advanced-examples\\\\aliasing.cy.js\"\n}",
+              "code": "cy.get(\".as-table\").find(\"tbody>tr\").first().find(\"td\").first().find(\"button\").as(\"firstBtn\");\ncy.get(\"@firstBtn\").click();\ncy.get(\"@firstBtn\").should(\"have.class\", \"btn-success\").and(\"contain\", \"Changed\");",
+              "err": {},
+              "uuid": "51238f7d-1f06-46a5-9033-0a09794e17fb",
+              "parentUUID": "5d7aa099-b098-4bb1-91f1-a9b8b18c0842",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": ".as() - alias a route for later use",
+              "fullTitle": "Aliasing .as() - alias a route for later use",
+              "timedOut": null,
+              "duration": 1426,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\2-advanced-examples\\\\aliasing.cy.js\"\n}",
+              "code": "cy.intercept(\"GET\", \"**/comments/*\").as(\"getComment\");\ncy.get(\".network-btn\").click();\ncy.wait(\"@getComment\").its(\"response.statusCode\").should(\"eq\", 200);",
+              "err": {},
+              "uuid": "287b0fc8-56f2-4106-b2b7-03e80af78a0a",
+              "parentUUID": "5d7aa099-b098-4bb1-91f1-a9b8b18c0842",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "51238f7d-1f06-46a5-9033-0a09794e17fb",
+            "287b0fc8-56f2-4106-b2b7-03e80af78a0a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2131,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "MyReports",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
