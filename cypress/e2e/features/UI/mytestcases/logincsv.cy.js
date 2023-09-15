@@ -26,7 +26,7 @@ describe('MultiLogins', () => {
                 cy.get('.loginButton').click();
                 cy.get('#logoutButton').click();
                 cy.contains('Login').click();
-
+                cy.log('Hi Hello Ashok')
             })
             
         } else {
